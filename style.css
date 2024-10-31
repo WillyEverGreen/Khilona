@@ -1,0 +1,282 @@
+/* 1. Navigation Bar
+Home: Links to the homepage.
+About Us: Overview of your mission, story, and values.
+Categories: Dropdown menu with links to toy categories (e.g., Wooden, Eco-Friendly, Educational).
+Then & Now: Dedicated section for comparing traditional and modern toys.
+Blog: Links to articles and resources on Indian toys, culture, and child development.
+Artisans: Stories of the artisans behind the toys.
+Contact Us: Contact form, social media links, and customer support details.
+
+
+
+2. Homepage
+Hero Banner: Large, vibrant image with a tagline and button linking to popular categories.
+Featured Categories: Quick links to main toy categories (Wooden, Educational, Folk Art).
+Best Sellers or Popular Toys: Display top toys, each with a small image, name, and “Shop Now” link.
+About Indian Toys: Brief summary of the cultural significance of Indian toys with a link to the About Us page.
+
+
+
+3. About Us
+Our Mission: Briefly state the purpose and goals of the website.
+Our Story: Short background on why you chose to promote Indian toys and any personal connection.
+Core Values: Mention supporting local artisans, sustainable practices, and cultural preservation.
+
+
+
+4. Categories
+Wooden Toys: Featuring Channapatna and other wooden toys with a short description of the craft.
+Educational Toys: Highlighting toys that promote learning and development.
+Folk Art Toys: Showcasing toys with traditional Indian art styles.
+Eco-Friendly Toys: Toys made from sustainable materials.
+Modern Indian Toys: Contemporary toys inspired by Indian themes and culture.
+
+
+
+5. Product Pages
+Product Image: High-quality images from multiple angles.
+Description: Details on material, craftsmanship, and suitability for age groups.
+Cultural Background: Brief history or cultural context if applicable.
+Price and Add to Cart: Clear pricing and purchasing options.
+Customer Reviews: User ratings and testimonials for credibility.
+
+
+
+6. Then & Now: Evolution of Indian Toys
+Layout: Split-screen or side-by-side format with clear comparison points.
+Traditional Toys: Descriptions and images of classic toys (e.g., spinning tops, wooden dolls).
+Modern Toys: Corresponding modern toys with descriptions and images (e.g., plastic or battery-operated toys).
+Comparison Points: Brief texts on Materials, Craftsmanship, Environmental Impact, Educational Value.
+Visuals: Use icons or infographics to compare key elements at a glance.
+
+
+
+7. Artisans
+Profiles of Artisans: Small stories and images of artisans who create the toys.
+Craft Process: Short descriptions or videos showing how the toys are made, materials used, and skills involved.
+Impact on Communities: Highlight how supporting these artisans benefits their communities.
+
+
+
+8. Blog
+Toy History: Articles about the heritage and evolution of Indian toys.
+DIY Craft Guides: Simple guides on making traditional toys at home.
+Educational Benefits: Short articles explaining the developmental value of traditional and modern toys.
+Festivals & Toys: How toys play a role in various Indian festivals.
+
+
+
+9. Contact Us
+Contact Form: Easy form for user inquiries.
+Customer Support Info: Email and phone number if available.
+Social Media Links: Icons linking to your social profiles for updates and engagement.
+FAQ Section (Optional): Address common questions about product materials, shipping, safety, etc. */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #002a32;
+}
+/*HEADER AND NAV */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #faedcd;
+}
+header img {
+  width: 100px;
+}
+nav {
+  margin: 36px 36px 0 0;
+  font-size: 18px;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+nav a:hover {
+  color: #ac845e !important;
+}
+/* .main-nav-link :link,
+.main-nav-link :link:visited {
+} */
+nav a {
+  color: #002a32 !important;
+  text-decoration: none;
+  display: inline;
+  font-size: 18px;
+  transition: all 0.3s;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.last-link:link,
+.last-link:visited {
+  padding: 16px 32px;
+  background-color: #d4a373 !important;
+  color: #faedcd !important;
+  font-size: 20px;
+}
+.last-link:hover,
+.last-link:active {
+  background-color: #bf9368 !important;
+}
+.section {
+  font-size: 22px;
+
+  background-color: #faedcd;
+  width: 0 auto;
+}
+.section-heading {
+  /* font-size: 2.2rem; */
+  padding: 32px;
+  max-width: 130rem;
+  margin-top: -5px;
+  margin-left: -12px;
+}
+
+h1 {
+  /* margin-bottom: 15px; */
+  font-size: 50px;
+  line-height: 1;
+  height: 120px;
+  width: 600px;
+  margin-top: 35px;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 36px;
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 700px;
+  gap: 60px;
+}
+.section-1 {
+  width: 550px;
+}
+.section-2 {
+  width: 655px;
+  margin-top: 14px;
+}
+.section-image img {
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 700px;
+  /* max-width: 650px; */
+  max-width: 100%;
+}
+.face-images {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+.face-images img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #faedcd;
+}
+.section-text {
+  color: #1a3f47;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.buttons {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 35px;
+}
+.buttons a {
+  margin-top: 16px;
+  text-align: center;
+  color: #faedcd;
+  font-weight: 600;
+}
+.section-text a:link,
+.section-text a:active {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 165px;
+  transition: all 0.3s;
+}
+.btn--1 {
+  background-color: #d4a373;
+}
+.btn--2 {
+  background-color: #002a32;
+}
+.btn--1:hover {
+  background-color: #bf9368;
+}
+.btn--2:hover {
+  box-shadow: inset 0 0 0 3px #1a3f47;
+  background-color: #faedcd;
+  color: #1a3f47;
+}
+/*second section of the webpage*/
+/*this is about-us page */
+
+.grid {
+  display: grid;
+  /* gap: 90px; */
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+.container {
+  max-width: 1140px;
+
+  margin: 0 auto;
+}
+.about-us {
+  padding-top: 80px;
+  padding-right: 110px;
+  padding-bottom: 60px;
+  padding-left: 110px;
+
+  background-color: #fdf8eb;
+}
+.about-us div {
+  padding: 22px;
+  font-size: 50px;
+}
+.container .sub-heading {
+  font-size: 24px;
+}
+.container h2 {
+  font-size: 44px;
+  margin-bottom: 16px;
+}
+.container .text-box {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-left: 14px;
+}
+
+.image-box img {
+  width: 750px;
+  max-width: 100%;
+  height: 400px;
+}
