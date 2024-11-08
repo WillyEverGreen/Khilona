@@ -6,7 +6,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indian Toys</title>
+    <link rel="stylesheet" href="media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,15 +18,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script src="myscript.js"></script>
     <header>
       <div class="logo"><img src="elephant-logo.png" alt="" /></div>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link" href="#">Section 1</a></li>
-          <li><a class="main-nav-link last-link" href="#">Section 1</a></li>
+          <li><a class="main-nav-link" href="#about-us">About Us</a></li>
+          <li><a class="main-nav-link" href="#history">History</a></li>
+          <li>
+            <a class="main-nav-link" href="#craftsmanship">Craftsmanship</a>
+          </li>
+          <li><a class="main-nav-link" href="#">Learn More</a></li>
+          <li>
+            <a
+              class="main-nav-link last-link"
+              href="https://online.fliphtml5.com/hidck/fhpk/#p=15"
+              >Flip Book</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -42,7 +53,7 @@
               imagination, and a touch of Indian artistry to every playtime.
             </p>
             <div class="buttons">
-              <a class="btn--1" href="#">Support Us</a>
+              <a class="btn--1" href="#sec-support">Support Us</a>
               <a class="btn--2" href="#">Learn more &darr;</a>
             </div>
             <div class="face-images">
@@ -61,7 +72,7 @@
         </div>
       </div>
     </section>
-    <section class="about-us grid--2-cols">
+    <section class="about-us grid--2-cols" id="about-us">
       <div class="container">
         <span class="sub-heading">About Us</span>
         <h2 class="heading-secondary">
@@ -89,7 +100,7 @@
         </div>
       </div>
       <div class="container">
-        <span class="sub-heading">History</span>
+        <span class="sub-heading" id="history">History</span>
         <h2 class="heading-secondary">The Legacy of Indian Toymaking</h2>
         <div class="text-box">
           India’s toy-making tradition spans thousands of years, with roots in
@@ -105,7 +116,7 @@
     </section>
     <section class="about-us grid--2-cols">
       <div class="container">
-        <span class="sub-heading">Craftsmanship</span>
+        <span class="sub-heading" id="craftsmanship">Craftsmanship</span>
         <h2 class="heading-secondary">The Art of Craftsmanship</h2>
         <div class="text-box">
           Every toy in our collection is a piece of art, handmade by skilled
@@ -119,6 +130,162 @@
       <div class="container">
         <div class="image-box">
           <img src="Toy-Soldier-from-Assam.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="walk-way">
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="img1.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img9.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img2.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img8.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img3.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img7.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img4.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img6.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img5.jpeg" alt="" />
+          </div>
+
+          <!-- SAME SLIDE DOUBLED -->
+          <div class="slide">
+            <img src="img1.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img9.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img2.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img8.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img3.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img7.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img4.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img6.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img5.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-support" id="sec-support">
+      <div class="support">
+        <div class="textthings">
+          <p>Supporting Local Artisans</p>
+          <p class="support-text">
+            At Khilona, we believe in celebrating the artistry and heritage of
+            traditional Indian toys by supporting the talented local artisans
+            who craft them. These artisans, often inheriting skills passed down
+            through generations, are the heart and soul of our culture. By
+            purchasing from Khilona, you're not only acquiring a beautiful,
+            handmade toy but also helping to sustain these artisans'
+            livelihoods. Here's how you can make a difference:
+          </p>
+        </div>
+        <div class="cardthings">
+          <div class="card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="iccon smile-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"
+                />
+              </svg>
+
+              <h2>Buy Handmade:</h2>
+            </div>
+            <span>
+              Each toy is carefully crafted with skills unique to specific
+              regions. Choosing handmade supports artisans directly, preserving
+              their craft and tradition.
+            </span>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="iccon message-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
+                />
+              </svg>
+
+              <h2>Spread Awareness:</h2>
+            </div>
+
+            <span>
+              Share the story of these crafts with friends and family. Increased
+              demand can create sustainable opportunities for artisans.
+            </span>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="iccon globe-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
+                />
+              </svg>
+
+              <h2>Collaborate with Us:</h2>
+            </div>
+            <span>
+              Together, we can create more avenues for these art forms to
+              flourish. Every purchase and every effort counts in keeping the
+              legacy of traditional Indian toys alive.
+            </span>
+          </div>
         </div>
       </div>
     </section>
