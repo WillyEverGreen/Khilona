@@ -1,0 +1,38 @@
+/* 1 rem = 1 em = 16px */
+/*1300divided by 16 = 84*/
+
+/* for screen size of smaller desktops */
+@media (max-width: 1344px) {
+  .section-1 {
+    max-width: 475px;
+  }
+  .section-2 {
+    max-width: 575px;
+  }
+  .hero-section {
+    gap: 80px;
+  }
+  .section-heading h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1200px) {
+  .section-1 {
+    max-width: 400px;
+  }
+  .section-2 {
+    max-width: 500px;
+  }
+  .hero-section {
+    gap: 80px;
+  }
+  .section-heading h1 {
+    font-size: 45px;
+  }
+  .image-box {
+    width: 100%;
+  }
+  .container {
+    font-size: 12px;
+  }
+}

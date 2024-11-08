@@ -79,12 +79,15 @@ FAQ Section (Optional): Address common questions about product materials, shippi
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1.2;
   font-weight: 400;
   color: #002a32;
+  /* overflow-x: hidden; */
 }
 /*HEADER AND NAV */
 header {
@@ -108,9 +111,7 @@ nav {
 nav a:hover {
   color: #ac845e !important;
 }
-/* .main-nav-link :link,
-.main-nav-link :link:visited {
-} */
+
 nav a {
   color: #002a32 !important;
   text-decoration: none;
@@ -119,6 +120,7 @@ nav a {
   transition: all 0.3s;
   font-weight: 500;
   border-radius: 8px;
+  text-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
 }
 .last-link:link,
 .last-link:visited {
@@ -244,6 +246,7 @@ h1 {
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
   display: grid;
+  align-items: center;
 }
 .container {
   max-width: 1140px;
@@ -264,13 +267,14 @@ h1 {
 }
 .container .sub-heading {
   font-size: 24px;
+  color: #ac845e;
 }
 .container h2 {
   font-size: 44px;
   margin-bottom: 16px;
 }
 .container .text-box {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.6;
   margin-left: 14px;
 }
@@ -279,4 +283,147 @@ h1 {
   width: 750px;
   max-width: 100%;
   height: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* animative pae+ge*/
+.walk-way {
+  background-color: #fdf8eb;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.slide-track {
+  display: flex;
+  width: calc(250px * 18);
+  /* animation: scroll 40s linear infinite; */
+  animation-name: scroll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+  flex-direction: column;
+}
+.slide img {
+  width: 100%;
+  height: 160px;
+  transition: transform 1s;
+}
+.slide img:hover {
+  transform: translateZ(20px);
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    #fdf8eb 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: " ";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+/* support section*/
+
+.sec-support {
+  width: 0 auto;
+  background-color: #faedcd;
+}
+.support {
+  padding: 36px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 800px;
+  background-color: #faedcd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+}
+.support h1 {
+  color: #002a32;
+}
+.support p {
+  font-size: 46px;
+  padding: 60px;
+  font-weight: 700;
+  padding-bottom: 0;
+}
+.support p:last-child {
+  font-size: 18px;
+  font-weight: 400;
+}
+.cardthings {
+  display: flex;
+  gap: 100px;
+}
+.card {
+  height: 300px;
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.icon h2 {
+  font-size: 18px;
+}
+.card span {
+  font-size: 18px;
+}
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+}
+.iccon {
+  width: 50px;
+}
+.smile-icon {
+  fill: #febe10;
+}
+.message-icon {
+  fill: white;
+}
+.globe-icon {
+  fill: #a9ba9d;
 }
