@@ -13,9 +13,10 @@
     gap: 80px;
   }
   .section-heading h1 {
-    font-size: 45px;
+    font-size: 49px;
   }
 }
+
 @media (max-width: 1200px) {
   .section-1 {
     max-width: 400px;
@@ -27,12 +28,14 @@
     gap: 80px;
   }
   .section-heading h1 {
-    font-size: 45px;
-  }
-  .image-box {
-    width: 100%;
+    font-size: 49px;
   }
   .container {
-    font-size: 12px;
+    width: 100%;
+    height: 100%;
+  }
+  .image-box img {
+    width: 100%;
+    height: 220px !;
   }
 }
